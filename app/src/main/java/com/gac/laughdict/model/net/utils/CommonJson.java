@@ -12,35 +12,36 @@ public class CommonJson<T> implements Serializable {
      */
     private static final long serialVersionUID = -3440061414071692254L;
 
-    private String code;
-    private String msg;
+    private String error_code;
+    private String reason;
 
     /**
      * 数据
      */
-    private T data;
+    private T result;
 
-    public String getMsg() {
-        return msg;
+
+    public String getError_code() {
+        return error_code;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setError_code(String error_code) {
+        this.error_code = error_code;
     }
 
-    public String getCode() {
-        return code;
+    public String getReason() {
+        return reason;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 
-    public T getData() {
-        return data;
+    public T getResult() {
+        return result;
     }
 
-    public void setData(T data) {
-        this.data = data;
+    public void setResult(T result) {
+        this.result = result;
     }
 }

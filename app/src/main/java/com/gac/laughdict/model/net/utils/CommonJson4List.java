@@ -17,38 +17,40 @@ public class CommonJson4List<T> implements Serializable {
      */
     private static final long serialVersionUID = -369558847578246550L;
 
-    private String code;
-    private String msg;
+    private String error_code;
+    private String reason;
     /**
      * 数据
      */
-    private List<T> data;
+    private List<T> result;
 
 
-
-
-    public String getCode() {
-        return code;
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public String getError_code() {
+        return error_code;
     }
 
-    public String getMsg() {
-        return msg;
+    public void setError_code(String error_code) {
+        this.error_code = error_code;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public String getReason() {
+        return reason;
     }
 
-    public List<T> getData() {
-        return data;
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 
-    public void setData(List<T> data) {
-        this.data = data;
+    public List<T> getResult() {
+        return result;
+    }
+
+    public void setResult(List<T> result) {
+        this.result = result;
     }
 
     public static CommonJson4List fromJson(String json, Class clazz) {

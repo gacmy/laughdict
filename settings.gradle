@@ -1,1 +1,1 @@
-include ':app', ':gacdialog'
+include ':app', ':gacdialog', ':gacrefresh2'

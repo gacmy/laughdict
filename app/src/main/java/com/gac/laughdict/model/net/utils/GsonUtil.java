@@ -139,7 +139,7 @@ public class GsonUtil {
         if(data == null){
             return  null;
         }
-        return data.getData();
+        return data.getResult();
     }
 
 
@@ -148,7 +148,7 @@ public class GsonUtil {
         if(json == null){
             return null;
         }
-        return json.getData();
+        return json.getResult();
        //return
     }
 }

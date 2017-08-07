@@ -8,6 +8,7 @@ import com.gac.laughdict.base.BaseFragment;
  */
 
 public class FirstFragment extends BaseFragment {
+
     @Override
     protected int getLayoutResource() {
         return R.layout.fragment_first;

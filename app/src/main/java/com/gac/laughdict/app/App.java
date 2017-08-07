@@ -22,6 +22,7 @@ import java.util.Set;
 
 
 /**
+ * this is a test comments nothing
  * Created by gacmy on 2017/3/15.
  */
 public class App extends Application {
@@ -46,7 +47,7 @@ public class App extends Application {
         instance = this;
         initImageLoader();
 
-
+        test();
 
     }
 
@@ -106,5 +107,8 @@ public class App extends Application {
     }
 
 
+    private void test(){
+
+    }
 
 }
